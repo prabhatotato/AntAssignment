@@ -1,10 +1,12 @@
-import React from 'react';
+import React from "react";
+import LoginLeft from "./login-left/LoginLeft";
+import LoginRight from "./login-right/LoginRight";
 
 function Login() {
   return (
-    <div>
-      <h1>Login Page</h1>
-      {/* Login form goes here */}
+    <div className="flex h-screen">
+      <LoginLeft />
+      <LoginRight />
     </div>
   );
 }
