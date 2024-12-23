@@ -3,7 +3,7 @@ import React from 'react'
 function Stats2() {
   return (
     <div 
-        class="absolute bottom-0 right-0 z-10 max-w-[270px] h-[164px] bg-white rounded-2xl shadow-2xl"
+        class="absolute bottom-0 right-0 z-10 w-[270px] h-[164px] bg-white rounded-[24px] shadow-2xl"
         style={{
             
             boxShadow: "0px 10px 20px rgba(0, 0, 0, 0.15), 0px -4px 10px rgba(0, 0, 0, 0.1)",

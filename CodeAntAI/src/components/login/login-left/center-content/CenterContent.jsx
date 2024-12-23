@@ -6,7 +6,8 @@ function CenterContent() {
   return (
     <div
       className="relative "
-      style={{ width: "474px", height: "322px", padding: "16px" }}
+      style={{ width: "474px", height: "322px", 
+       }}
     >
       {/* First Card */}
       <Stats1/>
