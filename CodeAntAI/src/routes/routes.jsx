@@ -13,6 +13,6 @@ export const routes = [
   },
   {
     path: '/',
-    element: <Navigate to="/home" replace />,
+    element: <Navigate to="/login" replace />,
   },
 ];
