@@ -12,7 +12,7 @@ function LoginLeft() {
       <img
         src={SubstractImage}
         alt="Decorative graphic"
-        className="absolute bottom-0 left-0 w-[284px] h-auto "
+        className="absolute bottom-0 left-0 w-[40.392%] h-[43.39%] z-[1]"
         
       />
     </div>

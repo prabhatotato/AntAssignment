@@ -11,9 +11,9 @@ function AuthCard() {
       <TabSelector activeTab={activeTab} setActiveTab={setActiveTab} />
 
       {/* Auth Options */}
-      <div className="p-6">
+      
         <AuthOptions activeTab={activeTab} />
-      </div>
+      
     </div>
   );
 }

@@ -5,9 +5,7 @@ import Stats1 from "./Stats1";
 function CenterContent() {
   return (
     <div
-      className="relative "
-      style={{ width: "474px", height: "322px", 
-       }}
+      className="relative basis-[67.414%] h-[322px]"
     >
       {/* First Card */}
       <Stats1/>
