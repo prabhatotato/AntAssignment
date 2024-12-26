@@ -6,7 +6,7 @@ import githubIcon from '../../../../../assets/githubIcon.png';
 import bitBucketIcon from '../../../../../assets/bitBucketIcon.png';
 import azureIcon from '../../../../../assets/AzureIcon.png';
 // import gitLabIcon from '/src/assets/GitLabIcon.png';
-import gitLabIcon from './GitLabIcon.png';
+import gitLabIcon from './GitlabIcon.png';
 import ssoIcon from '../../../../../assets/SSOIcon.png';
 
 function AuthOptions({ activeTab }) {
