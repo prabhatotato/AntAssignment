@@ -1,6 +1,7 @@
 import React from 'react';
 import { FaHome, FaCode, FaCloud, FaBook, FaCog, FaPhone, FaSignOutAlt } from 'react-icons/fa';
 import LogoImg from '../../assets/logo.png';
+import { Link } from 'react-router-dom';
 
 
 function Sidebar({ users, selectedUser, onUserChange }) {
@@ -99,26 +100,26 @@ function Sidebar({ users, selectedUser, onUserChange }) {
       <div className="px-6 py-4  border-gray-200">
         <ul className="space-y-2">
           <li>
-            <a
-              href="#"
+            <Link
+              to="https://www.codeant.ai/"
               className="flex items-center space-x-3 text-gray-700 hover:text-blue-500
               font-family-body text-text-md font-semibold leading-text-md text-left
               "
             >
               <FaPhone className="text-lg" />
               <span>Support</span>
-            </a>
+            </Link>
           </li>
           <li>
-            <a
-              href="#"
+            <Link
+              to="/login"
               className="flex items-center space-x-3 text-gray-700 hover:text-blue-500
               font-family-body text-text-md font-semibold leading-text-md text-left
               "
             >
               <FaSignOutAlt className="text-lg" />
               <span>Logout</span>
-            </a>
+            </Link>
           </li>
         </ul>
       </div>

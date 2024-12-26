@@ -5,7 +5,7 @@ import { useNavigate } from 'react-router-dom'; // Import useNavigate hook
 import githubIcon from '../../../../../assets/githubIcon.png';
 import bitBucketIcon from '../../../../../assets/bitBucketIcon.png';
 import azureIcon from '../../../../../assets/AzureIcon.png';
-import gitLabIcon from '../../../../../assets/GitLabIcon.png';
+import gitLabIcon from '/src/assets/GitLabIcon.png';
 import ssoIcon from '../../../../../assets/SSOIcon.png';
 
 function AuthOptions({ activeTab }) {
