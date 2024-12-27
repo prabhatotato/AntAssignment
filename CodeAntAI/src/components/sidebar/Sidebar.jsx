@@ -31,8 +31,8 @@ function Sidebar({
         transition-transform duration-300
         justify-between
         
-        w-full h-full
-        ${isMobileMenuOpen ? "translate-y-0 h-[65%] " : "-translate-y-full  "}
+        w-full 
+        ${isMobileMenuOpen ? "translate-y-0 h-[45%] " : "-translate-y-full h-full "}
 
         md:w-64 md:h-screen md:translate-y-0
       `}
