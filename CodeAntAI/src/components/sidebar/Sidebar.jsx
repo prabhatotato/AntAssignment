@@ -32,7 +32,7 @@ function Sidebar({
         justify-between
         
         w-full 
-        ${isMobileMenuOpen ? "translate-y-0 h-[45%] " : "-translate-y-full h-full "}
+        ${isMobileMenuOpen ? "translate-y-0 h-[70%] " : "-translate-y-full h-full "}
 
         md:w-64 md:h-screen md:translate-y-0
       `}
