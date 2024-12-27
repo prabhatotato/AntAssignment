@@ -1,6 +1,6 @@
 import React from "react";
 import CenterContent from "./center-content/CenterContent";
-import SubstractImage from "../../../assets/Subtract.png"; 
+import SubstractImage from "../../../assets/Subtract.png";
 
 function LoginLeft() {
   return (
@@ -13,7 +13,6 @@ function LoginLeft() {
         src={SubstractImage}
         alt="Decorative graphic"
         className="absolute bottom-0 left-0 w-[40.392%] h-[43.39%] z-[1]"
-        
       />
     </div>
   );

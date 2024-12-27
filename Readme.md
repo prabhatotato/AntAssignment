@@ -11,15 +11,15 @@
 1. **Navigate to the Project Folder**:
    The project is located in the `CodeAntAI` directory. Use the following command to navigate:
    
-   cd CodeAntAI
+   `cd CodeAntAI`
 
 2. **Install Dependencies**:
    Install the required dependencies using npm:
-   npm install
+   `npm install`
 
 3. **Start the Development Server**:
    Install the required dependencies using npm:
-   npm run dev
+   `npm run dev`
 
    This will open the project in your default browser at http://localhost:5173
 

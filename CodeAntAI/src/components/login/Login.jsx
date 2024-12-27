@@ -5,7 +5,7 @@ import LoginRight from "./login-right/LoginRight";
 function Login() {
   return (
     <div className="flex h-screen">
-    <div className="hidden lg:flex w-[47%]">
+      <div className="hidden lg:flex w-[47%]">
         <LoginLeft />
       </div>
       {/* <LoginLeft /> */}

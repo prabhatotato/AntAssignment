@@ -22,7 +22,7 @@ function TabSelector({ activeTab, setActiveTab }) {
 
       {/* Tab Buttons Div */}
       <div className="w-full max-w-[624px] h-auto flex gap-[4px] border-t border-gray-200 bg-gray-50 rounded-md overflow-hidden">
-      <button
+        <button
           className={`flex-1 text-center rounded-md py-4 px-6 font-inter text-lg font-semibold leading-[28px] ${
             activeTab === "SAAS"
               ? "text-white bg-blue-600"
