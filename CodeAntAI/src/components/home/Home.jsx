@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Sidebar from '../sidebar/Sidebar';
 import Header from '../header/Header';
 import RepositoryList from '../repositoryList/RepositoryList';
+import { FaBars } from 'react-icons/fa'; 
 
 const users = [
   {
@@ -28,7 +29,7 @@ const users = [
 function Home() {
   const [selectedUser, setSelectedUser] = useState(users[0].name);
   const [searchTerm, setSearchTerm] = useState('');
-
+  
   const handleUserChange = (userName) => {
     setSelectedUser(userName);
     setSearchTerm(''); // Clear search term when switching users

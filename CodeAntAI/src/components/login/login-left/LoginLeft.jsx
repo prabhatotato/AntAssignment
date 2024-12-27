@@ -4,7 +4,7 @@ import SubstractImage from "../../../assets/Subtract.png";
 
 function LoginLeft() {
   return (
-    <div className="flex flex-1 justify-center items-center bg-white relative basis-[47%] border-r border-[#e9eaeb]">
+    <div className="flex flex-1 justify-center items-center bg-white relative w-full border-r border-[#e9eaeb]">
       {/* Center content */}
       <CenterContent />
 
