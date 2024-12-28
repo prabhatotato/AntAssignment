@@ -18,7 +18,7 @@ function Header({
   return (
     <div className="flex flex-col w-full gap-4 px-5 py-4">
       {/* ROW 1: Title, count, refresh/add buttons, (hamburger on mobile) */}
-      <div className="flex flex-wrap items-center justify-between w-full">
+      <div className="flex flex-wrap  md:flex-nowrap items-center justify-between w-full">
         {/* Left side: Title + repository count */}
         <div className=" flex w-full justify-between">
           <div className="mb-2 sm:mb-0">
@@ -44,13 +44,13 @@ function Header({
         <div className="flex items-center space-x-2 mt-2 ">
           <button
             onClick={onRefresh}
-            className="flex items-center space-x-2 px-4 py-2 border border-gray-300 rounded-md text-gray-600 hover:bg-gray-100 shadow-sm"
+            className="flex items-center space-x-2 px-4 py-2 border border-gray-300 rounded-md text-gray-600 hover:bg-gray-100 shadow-sm whitespace-nowrap"
           >
             <FaSyncAlt />
             <span>Refresh All</span>
           </button>
 
-          <button className="flex items-center space-x-2 px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-500 shadow-sm">
+          <button className="flex items-center space-x-2 px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-500 shadow-sm whitespace-nowrap">
             <FaPlus />
             <span>Add Repository</span>
           </button>

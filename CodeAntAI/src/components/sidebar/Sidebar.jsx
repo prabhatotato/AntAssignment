@@ -139,7 +139,9 @@ function Sidebar({
                 <span>Settings</span>
               </a>
             </li>
-            <li>
+            {
+              isMobileMenuOpen && (
+                <li>
               <a
                 href="https://www.codeant.ai/"
                 onClick={toggleMobileMenu}
@@ -151,7 +153,12 @@ function Sidebar({
                 <span>Support</span>
               </a>
             </li>
-            <li>
+              )
+            }
+            
+            {
+              isMobileMenuOpen && (
+                <li>
               <Link
                 to="/login"
                 onClick={toggleMobileMenu}
@@ -163,6 +170,9 @@ function Sidebar({
                 <span>Logout</span>
               </Link>
             </li>
+              )
+            }
+            
           </ul>
         </nav>
       </div>
