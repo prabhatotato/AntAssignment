@@ -32,7 +32,11 @@ function Sidebar({
         justify-between
         
         w-full 
-        ${isMobileMenuOpen ? "translate-y-0 h-[70%] " : "-translate-y-full h-full "}
+        ${
+          isMobileMenuOpen
+            ? "translate-y-0 h-[70%] "
+            : "-translate-y-full h-full "
+        }
 
         md:w-64 md:h-screen md:translate-y-0
       `}
@@ -82,7 +86,11 @@ function Sidebar({
             <li>
               <a
                 href="#"
-                onClick={toggleMobileMenu}
+                onClick={() => {
+                  if (window.innerWidth < 768) {
+                    toggleMobileMenu();
+                  }
+                }}
                 className="flex items-center space-x-3 px-4 py-2 bg-blue-500 text-white rounded-md
                 font-inter text-text-md font-semibold leading-text-md text-left
                 "
@@ -94,7 +102,11 @@ function Sidebar({
             <li>
               <a
                 href="#"
-                onClick={toggleMobileMenu}
+                onClick={() => {
+                  if (window.innerWidth < 768) {
+                    toggleMobileMenu();
+                  }
+                }}
                 className="flex items-center space-x-3 px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-md
                 font-inter text-text-md font-semibold leading-text-md text-left
                 "
@@ -106,7 +118,11 @@ function Sidebar({
             <li>
               <a
                 href="#"
-                onClick={toggleMobileMenu}
+                onClick={() => {
+                  if (window.innerWidth < 768) {
+                    toggleMobileMenu();
+                  }
+                }}
                 className="flex items-center space-x-3 px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-md
                 font-inter text-text-md font-semibold leading-text-md text-left
                 "
@@ -118,7 +134,11 @@ function Sidebar({
             <li>
               <a
                 href="#"
-                onClick={toggleMobileMenu}
+                onClick={() => {
+                  if (window.innerWidth < 768) {
+                    toggleMobileMenu();
+                  }
+                }}
                 className="flex items-center space-x-3 px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-md
                 font-inter text-text-md font-semibold leading-text-md text-left
                 "
@@ -130,7 +150,11 @@ function Sidebar({
             <li>
               <a
                 href="#"
-                onClick={toggleMobileMenu}
+                onClick={() => {
+                  if (window.innerWidth < 768) {
+                    toggleMobileMenu();
+                  }
+                }}
                 className="flex items-center space-x-3 px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-md
                 font-inter text-text-md font-semibold leading-text-md text-left
                 "
@@ -139,40 +163,43 @@ function Sidebar({
                 <span>Settings</span>
               </a>
             </li>
-            {
-              isMobileMenuOpen && (
-                <li>
-              <a
-                href="https://www.codeant.ai/"
-                onClick={toggleMobileMenu}
-                className="flex items-center space-x-3 px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-md
+            {isMobileMenuOpen && (
+              <li>
+                <a
+                  href="https://www.codeant.ai/"
+                  onClick={() => {
+                    if (window.innerWidth < 768) {
+                      toggleMobileMenu();
+                    }
+                  }}
+                  className="flex items-center space-x-3 px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-md
                 font-inter text-text-md font-semibold leading-text-md text-left
                 "
-              >
-                <FaPhone className="text-lg" />
-                <span>Support</span>
-              </a>
-            </li>
-              )
-            }
-            
-            {
-              isMobileMenuOpen && (
-                <li>
-              <Link
-                to="/login"
-                onClick={toggleMobileMenu}
-                className="flex items-center space-x-3 px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-md
+                >
+                  <FaPhone className="text-lg" />
+                  <span>Support</span>
+                </a>
+              </li>
+            )}
+
+            {isMobileMenuOpen && (
+              <li>
+                <Link
+                  to="/login"
+                  onClick={() => {
+                    if (window.innerWidth < 768) {
+                      toggleMobileMenu();
+                    }
+                  }}
+                  className="flex items-center space-x-3 px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-md
                 font-inter text-text-md font-semibold leading-text-md text-left
                 "
-              >
-                <FaSignOutAlt className="text-lg" />
-                <span>Logout</span>
-              </Link>
-            </li>
-              )
-            }
-            
+                >
+                  <FaSignOutAlt className="text-lg" />
+                  <span>Logout</span>
+                </Link>
+              </li>
+            )}
           </ul>
         </nav>
       </div>
